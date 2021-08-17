@@ -7,7 +7,7 @@ import cors from 'cors';
 
 
 
-const server = new Server();
+const server = Server.instance;
 
 //BodyParser
 server.app.use( express.urlencoded({ extended:true }) );
